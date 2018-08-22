@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  app:
+    image: "golang"
+    container_name: "golang-app"
+    volumes:
+      - .:/go/src/
+    working_dir: /go/src/
+networks:
+  default:
+    name: "app"
