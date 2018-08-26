@@ -1,5 +1,5 @@
 ### Start any file
 
 ```sh
-$ docker run --rm -it app go run src/golang-book/chapter1/main.go
+$ docker run --rm --volume $(pwd):/go/src/app golang go run src/app/src/golang-book/chapter1/main.go
 ```
